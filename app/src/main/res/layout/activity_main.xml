@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vector_318"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vector_319"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="100dp"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/unolo_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="151dp"/>
+
+    <RelativeLayout
+        android:id="@+id/signinView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="171dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="33dp">
+
+        <TextView
+            android:id="@+id/textViewSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="35dp"
+            android:text="@string/sign_in"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="251dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/textViewSignin"
+            android:layout_marginStart="24dp"
+            android:alpha="0.5"
+            android:gravity="top"
+            android:text="@string/username"
+            android:textAppearance="@style/username" />
+
+        <EditText
+            android:id="@+id/userNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/username"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/et_bg"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="251dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/userNameEt"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="27dp"
+            android:alpha="0.5"
+            android:gravity="top"
+            android:text="@string/password"
+            android:textAppearance="@style/password" />
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_below="@+id/password"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/passwd_bg"
+            android:padding="10dp" />
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButtonView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signinView"
+        android:background="@drawable/loginbtn_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textAppearance="@style/login"
+        android:textStyle="bold"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signinView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
